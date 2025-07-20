@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 My Web Launchpad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #444;
+    }
+
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    header {
+      text-align: center;
+      padding: 3em 2em;
+      animation: launch 3s ease-in-out;
+    }
+
+    @keyframes launch {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    .form-section {
+      margin-top: 2em;
+      padding: 2em;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      border: 1px solid #333;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 1em;
+      border: none;
+      border-radius: 5px;
+      margin-right: 1em;
+      background: #111;
+      color: #0ff;
+    }
+
+    button {
+      padding: 1em 2em;
+      background: #0ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Missions</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <header>
+    <h1>🚀 Welcome to My Web Launchpad</h1>
+    <p>Your journey to the stars starts here.</p>
+  </header>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/564x/42/21/91/422191eaba54727791604918095c9bc1.jpg" alt="Rocket Launch">
+    <p>
+      This is a futuristic-themed webpage created with HTML and CSS as part of my Level 1 internship task. Let’s launch innovation one line of code at a time.
+    </p>
+
+    <div class="form-section">
+      <h2>🛰️ Join the Mission</h2>
+      <form>
+        <input type="text" placeholder="Enter Your Code Name" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    🌌 Designed with 💻 by Kadhar Ferrash | Level 1 - Task 1 | Internship @ Cognifyz Technologies
+  </footer>
+
+</body>
+</html>

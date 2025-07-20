@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marvel Cinematic Viewer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom right, #0a0a0a, #1c1c1c);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 1em 0;
+      text-align: center;
+      color: #ff3c00;
+      text-shadow: 0 0 10px #ff3c00;
+      font-size: 2.5em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.2em;
+      padding: 2em;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 3px solid transparent;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff3c00;
+      border-color: #ff3c00;
+    }
+
+    .fullscreen {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    }
+
+    .fullscreen img {
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
+    object-position: center;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+    }
+
+    .fullscreen:target {
+    display: flex;
+    }
+
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 2em;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      background: #ff3c00;
+      padding: 5px 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff3c00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Marvel Cinematic Viewer</h1>
+
+  <div class="gallery">
+    <a href="#img1"><img src="images/age of ultron.jpeg" alt="Age of Ultron"></a>
+    <a href="#img2"><img src="images/ant man 1.jpeg" alt="Ant Man"></a>
+    <a href="#img3"><img src="images/ant man and wasp.jpeg" alt="Ant Man & Wasp"></a>
+    <a href="#img4"><img src="images/avengers 1.jpeg" alt="Avengers"></a>
+    <a href="#img5"><img src="images/black panther.jpeg" alt="Black Panther"></a>
+    <a href="#img6"><img src="images/captain america.jpeg" alt="Captain America"></a>
+    <a href="#img7"><img src="images/captain marvel.jpeg" alt="Captain Marvel"></a>
+    <a href="#img8"><img src="images/civil war.jpeg" alt="Civil War"></a>
+    <a href="#img9"><img src="images/doctor strange.jpeg" alt="Doctor Strange"></a>
+    <a href="#img10"><img src="images/end game.jpeg" alt="End Game"></a>
+    <a href="#img11"><img src="images/gog vol 1.jpeg" alt="GOG Vol 1"></a>
+    <a href="#img12"><img src="images/gog vol 2.jpeg" alt="GOG Vol 2"></a>
+    <a href="#img13"><img src="images/home coming.jpeg" alt="Homecoming"></a>
+    <a href="#img14"><img src="images/hulk.jpeg" alt="Hulk"></a>
+    <a href="#img15"><img src="images/infinity war.jpeg" alt="Infinity War"></a>
+    <a href="#img16"><img src="images/iron man 1.jpeg" alt="Iron Man 1"></a>
+    <a href="#img17"><img src="images/iron man 2.jpeg" alt="Iron Man 2"></a>
+    <a href="#img18"><img src="images/iron man 3.jpeg" alt="Iron Man 3"></a>
+    <a href="#img19"><img src="images/thor 1.jpeg" alt="Thor 1"></a>
+    <a href="#img20"><img src="images/thor 2.jpeg" alt="Thor 2"></a>
+    <a href="#img21"><img src="images/thor 3.jpeg" alt="Thor 3"></a>
+    <a href="#img22"><img src="images/winter soldier.jpeg" alt="Winter Soldier"></a>
+  </div>
+
+  <!-- Fullscreen Overlays -->
+  <div id="img1" class="fullscreen"><a href="#" class="close">×</a><img src="images/age of ultron.jpeg"></div>
+  <div id="img2" class="fullscreen"><a href="#" class="close">×</a><img src="images/ant man 1.jpeg"></div>
+  <div id="img3" class="fullscreen"><a href="#" class="close">×</a><img src="images/ant man and wasp.jpeg"></div>
+  <div id="img4" class="fullscreen"><a href="#" class="close">×</a><img src="images/avengers 1.jpeg"></div>
+  <div id="img5" class="fullscreen"><a href="#" class="close">×</a><img src="images/black panther.jpeg"></div>
+  <div id="img6" class="fullscreen"><a href="#" class="close">×</a><img src="images/captain america.jpeg"></div>
+  <div id="img7" class="fullscreen"><a href="#" class="close">×</a><img src="images/captain marvel.jpeg"></div>
+  <div id="img8" class="fullscreen"><a href="#" class="close">×</a><img src="images/civil war.jpeg"></div>
+  <div id="img9" class="fullscreen"><a href="#" class="close">×</a><img src="images/doctor strange.jpeg"></div>
+  <div id="img10" class="fullscreen"><a href="#" class="close">×</a><img src="images/end game.jpeg"></div>
+  <div id="img11" class="fullscreen"><a href="#" class="close">×</a><img src="images/gog vol 1.jpeg"></div>
+  <div id="img12" class="fullscreen"><a href="#" class="close">×</a><img src="images/gog vol 2.jpeg"></div>
+  <div id="img13" class="fullscreen"><a href="#" class="close">×</a><img src="images/home coming.jpeg"></div>
+  <div id="img14" class="fullscreen"><a href="#" class="close">×</a><img src="images/hulk.jpeg"></div>
+  <div id="img15" class="fullscreen"><a href="#" class="close">×</a><img src="images/infinity war.jpeg"></div>
+  <div id="img16" class="fullscreen"><a href="#" class="close">×</a><img src="images/iron man 1.jpeg"></div>
+  <div id="img17" class="fullscreen"><a href="#" class="close">×</a><img src="images/iron man 2.jpeg"></div>
+  <div id="img18" class="fullscreen"><a href="#" class="close">×</a><img src="images/iron man 3.jpeg"></div>
+  <div id="img19" class="fullscreen"><a href="#" class="close">×</a><img src="images/thor 1.jpeg"></div>
+  <div id="img20" class="fullscreen"><a href="#" class="close">×</a><img src="images/thor 2.jpeg"></div>
+  <div id="img21" class="fullscreen"><a href="#" class="close">×</a><img src="images/thor 3.jpeg"></div>
+  <div id="img22" class="fullscreen"><a href="#" class="close">×</a><img src="images/winter soldier.jpeg"></div>
+
+</body>
+</html>

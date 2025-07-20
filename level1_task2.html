@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧠 Smart Control Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+      color: #0ff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3em 1em;
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: 0 0 15px #0ff;
+      margin-bottom: 2em;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2em;
+      border-radius: 15px;
+      border: 1px solid #0ff;
+      width: 90%;
+      max-width: 500px;
+      margin-bottom: 2em;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    button {
+      padding: 1em 2em;
+      background: transparent;
+      border: 2px solid #0ff;
+      color: #0ff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 1em;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    input[type="number"] {
+      padding: 1em;
+      width: 40%;
+      margin: 0.5em;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: #0ff;
+    }
+
+    #result {
+      font-size: 1.5em;
+      margin-top: 1em;
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Smart Control Panel</h1>
+
+  <!-- Task 1: Color Changing Button -->
+  <div class="panel">
+    <h2>🎨 Color Switcher</h2>
+    <p>Click the button to change its color randomly:</p>
+    <button onclick="changeColor(this)">Click Me!</button>
+  </div>
+
+  <!-- Task 2: Greeting Based on Time -->
+  <div class="panel">
+    <h2>⏰ Time Greeting</h2>
+    <p>Click to see a time-based greeting:</p>
+    <button onclick="showGreeting()">Greet Me</button>
+  </div>
+
+  <!-- Task 3: Simple Calculator -->
+  <div class="panel">
+    <h2>➕ Basic Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <div id="result">Result: —</div>
+  </div>
+
+  <footer>
+    🚀 Task by Kadhar Ferrash | Cognifyz Internship – Level 1 Task 2
+  </footer>
+
+  <script>
+    // Task 1: Change Button Color
+    function changeColor(button) {
+      const colors = ['#0ff', '#f0f', '#ff0', '#0f0', '#f90', '#09f'];
+      const random = colors[Math.floor(Math.random() * colors.length)];
+      button.style.background = random;
+      button.style.color = '#000';
+      button.style.boxShadow = `0 0 10px ${random}`;
+    }
+
+    // Task 2: Show Greeting Based on Time
+    function showGreeting() {
+      const hour = new Date().getHours();
+      let greeting;
+      if (hour < 12) greeting = "Good Morning 🌅!";
+      else if (hour < 18) greeting = "Good Afternoon ☀️!";
+      else greeting = "Good Evening 🌙!";
+      alert(greeting + " Hope you're coding something awesome.");
+    }
+
+    // Task 3: Calculator
+    function calculate() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      if (!isNaN(num1) && !isNaN(num2)) {
+        document.getElementById('result').textContent = `Result: ${num1 + num2}`;
+      } else {
+        alert("Please enter valid numbers!");
+      }
+    }
+  </script>
+
+</body>
+</html>

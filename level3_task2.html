@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cognifyz Internship – Web Developer & More</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43);
+      color: #e0f7fa;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148902184.jpg') no-repeat center/cover;
+      padding: 4em 1em;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #a7ffeb;
+      margin-bottom: 0.2em;
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      color: #cfd8dc;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #a7ffeb;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 3em auto;
+      padding: 0 1em;
+    }
+
+    .section {
+      margin-bottom: 3em;
+    }
+    .section h2 {
+      font-size: 2em;
+      color: #a7ffeb;
+      margin-bottom: 0.5em;
+    }
+    .section p, .section li {
+      font-size: 1.05em;
+      line-height: 1.8;
+      color: #cfd8dc;
+    }
+
+    .domains {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+    .domain-card {
+      flex: 1 1 200px;
+      background: rgba(167,255,235,0.1);
+      border-radius: 10px;
+      padding: 1em;
+      text-align: center;
+    }
+    .domain-card h3 {
+      margin: 0.5em 0;
+      color: #e0f7fa;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 2em 0;
+    }
+    .cta a {
+      background: #26c6da;
+      color: #000;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #26c6da;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #84ffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      background: #020212;
+      color: #78909c;
+    }
+    footer a {
+      color: #84ffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Cognifyz Technologies Internship Program</h1>
+    <p>Empower your career with real-world projects, expert mentorship & certification across Web, Data, Mobile, and AI domains.</p>
+  </header>
+
+  <nav>
+    <a href="#program">Program</a>
+    <a href="#domains">Domains</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#apply">Apply</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="program" class="section">
+      <h2>📋 Program Overview</h2>
+      <p>This is a remote, 1–3 month program designed to bridge the gap between academics & industry. Hands-on experience in real-world tech stacks under mentor guidance. Open to students & freshers with basic HTML, CSS, and JS skills. Certification & LOR provided on completion.</p>
+    </section>
+
+    <section id="domains" class="section">
+      <h2>🔧 Internship Domains</h2>
+      <div class="domains">
+        <div class="domain-card"><h3>Web Development</h3></div>
+        <div class="domain-card"><h3>Mobile App Dev</h3></div>
+        <div class="domain-card"><h3>Full Stack Dev</h3></div>
+        <div class="domain-card"><h3>UI/UX Design</h3></div>
+        <div class="domain-card"><h3>Data Science</h3></div>
+        <div class="domain-card"><h3>Machine Learning</h3></div>
+      </div>
+    </section>
+
+    <section id="requirements" class="section">
+      <h2>✅ Who Should Apply?</h2>
+      <ul>
+        <li>Basic knowledge of HTML, CSS, JavaScript</li>
+        <li>Willingness to learn frameworks (React, Vue, etc.)</li>
+        <li>Passionate about building real web or mobile apps</li>
+        <li>Collaborative mindset & good communication skills</li>
+        <li>Self-driven students or freshers with zero to one-year experience</li>
+      </ul>
+    </section>
+
+    <section id="benefits" class="section">
+      <h2>🎁 What You'll Gain</h2>
+      <ul>
+        <li>Hands-on experience with modern web & app tech stacks</li>
+        <li>Mentorship from seasoned Cognifyz developers</li>
+        <li>Final certification & Letter of Recommendation</li>
+        <li>Stipend on successful completion of Level 3</li>
+        <li>Flexible scheduling across 1–3 months</li>
+      </ul>
+    </section>
+
+    <div id="apply" class="cta">
+      <a href="https://cognifyz.com/internships/" target="_blank">🚀 Apply Now</a>
+    </div>
+
+    <section id="faq" class="section">
+      <h2>❓ Frequently Asked Questions</h2>
+      <p><strong>Q:</strong> Is the internship free or paid?<br /><strong>A:</strong> It is free to join; however, a stipend is available upon completion of Level 3 tasks.</p>
+      <p><strong>Q:</strong> What is the internship duration?<br /><strong>A:</strong> Choose between 1, 2 or 3‑month durations; it’s completely remote.</p>
+      <p><strong>Q:</strong> How will I apply?<br /><strong>A:</strong> Click “Apply Now” to visit the official Cognifyz internships page.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    📧 <a href="mailto:contact@cognifyz.com">contact@cognifyz.com</a> | 🌐 <a href="https://cognifyz.com">cognifyz.com</a> | 🔗 <a href="https://www.linkedin.com/company/cognifyz-technologies/">Cognifyz on LinkedIn</a><br />
+    © 2025 Cognifyz Technologies – Where Data Meets Intelligence
+  </footer>
+
+</body>
+</html>
